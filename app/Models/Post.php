@@ -18,4 +18,14 @@ class Post extends Model
         'post_type'
     ];
 
+    public function publisherUser()
+    {
+        return $this->belongsTo(User::class, 'publisher_user_id');
+    }
+
+    public function publisherPage()
+    {
+        return $this->belongsTo(Page::class, 'publisher_page_id');
+    }
+
 }

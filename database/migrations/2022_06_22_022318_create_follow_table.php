@@ -17,11 +17,13 @@ class CreateFollowTable extends Migration
             $table->id();
             $table->bigInteger('follow_user_id')->unsigned()->nullable();
             $table->bigInteger('follow_page_id')->unsigned()->nullable();
+            $table->bigInteger('follower_id')->unsigned()->nullable();
             $table->enum('follow_type', ['follow_person', 'follow_page'])->default('follow_person');
             $table->timestamps();
 
             $table->foreign('follow_user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('follow_page_id')->references('id')->on('pages')->onDelete('cascade');
+            $table->foreign('follower_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

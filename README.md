@@ -8,4 +8,4 @@
 </ol>
 
 Here is a postman api collection for test the project 
-<a target="_blank" href="https://www.getpostman.com/collections/46cf78c96948de163d9a">https://www.getpostman.com/collections/46cf78c96948de163d9a</a>
+<a target="_blank" href="https://www.getpostman.com/collections/47ef6c754bfb8c71ba14"> https://www.getpostman.com/collections/47ef6c754bfb8c71ba14 </a>

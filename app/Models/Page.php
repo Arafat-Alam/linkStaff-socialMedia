@@ -18,4 +18,19 @@ class Page extends Model
         'cover_img'
     ];
 
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function post()
+    {
+        return $this->hasMany(Post::class, 'publisher_page_id');
+    }
+
+    public function followPage()
+    {
+        return $this->hasMany(Follow::class, 'follow_page_id');
+    }
+
 }

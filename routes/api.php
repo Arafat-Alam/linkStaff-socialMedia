@@ -3,6 +3,8 @@
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\FollowController;
+use App\Http\Controllers\FeedController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -35,4 +37,8 @@ Route::group(['middleware' => 'auth:api'], function() {
 
     Route::post('person/attach-post', [PostController::class, 'store']);
     Route::post('page/{pageId}/attach-post', [PostController::class, 'pagePostStore']);
+
+    Route::post('follow/person/{personId}', [FollowController::class, 'store']);
+    Route::post('follow/page/{pageId}', [FollowController::class, 'followPage']);
+    Route::get('person/feed', [FeedController::class, 'index']);
 });
