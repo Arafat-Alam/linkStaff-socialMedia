@@ -5,6 +5,7 @@
 <li><b>Then run composer install in the root of the project.</b></li>
 <li><b>Change the database settings in .env file.</b></li>
 <li><b>Then run the "php artisan migrate" command in the root of the project.</b></li>
+<li><b>Then run the "php artisan jwt:secret" command in the root of the project.</b></li>
 </ol>
 
 Here is a postman api collection for test the project 
