@@ -10,3 +10,5 @@
 
 Here is a postman api collection for test the project 
 <a target="_blank" href="https://www.getpostman.com/collections/47ef6c754bfb8c71ba14"> https://www.getpostman.com/collections/47ef6c754bfb8c71ba14 </a>
+
+there is a variable in the collection named baseUrl, change the root directory of the project in the variable.
